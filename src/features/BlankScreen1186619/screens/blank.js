@@ -27,7 +27,8 @@ import {
   API_SIGNUP_FAILED,
 } from '../../../store/auth/constants';
 
-export const HOME_SCREEN = 'BlankScreen015827';
+Tab.prototype.requestAnimationFrame = () => {};
+Tabs.prototype.requestAnimationFrame = () => {};
 
 const TextInputField = props => (
   <View>
