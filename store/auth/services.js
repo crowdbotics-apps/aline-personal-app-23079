@@ -1,8 +1,8 @@
 import axios from 'axios';
+import { appConfig } from "../../config/app";
 
-// calls with token
 const authAPI = axios.create({
-  baseURL: 'https://profile-settings-mo-16820.botics.co/', // your app back-end url
+  baseURL: appConfig.emailAuthAPIEndPoint, // your app back-end url
   headers: {Accept: 'application/json', 'Content-Type': 'application/json'},
 });
 
