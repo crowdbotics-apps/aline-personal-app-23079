@@ -90,6 +90,8 @@ SENDGRID_USERNAME
 SENDGRID_PASSWORD
 ```
 
+### Note for developer: you can access the user token through the authReducer state (i.e. `state.authReducer.token` and user information at `state.authReducer.user`)
+                             
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
