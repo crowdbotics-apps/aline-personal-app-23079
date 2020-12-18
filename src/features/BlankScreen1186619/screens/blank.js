@@ -62,15 +62,18 @@ const Button = props => (
 );
 
 class SignUpComponent extends Component {
-  state = {
-    email: '',
-    password: '',
-    confirmPassword: '',
-    emailError: '',
-    passwordError: '',
-    confirmPasswordError: '',
-    requestError: '',
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      email: '',
+      password: '',
+      confirmPassword: '',
+      emailError: '',
+      passwordError: '',
+      confirmPasswordError: '',
+      requestError: '',
+    }
+  }
 
   componentDidUpdate(prevProps) {
     const {requestError, user, success} = this.props;
